@@ -1,0 +1,236 @@
+/** {
+    margin: 0;
+    padding: 0;
+}*/
+
+body {
+    background-color: #f4f4f4;
+    color: #555;
+
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    /* this is the same as what's written above but in a more condesed way
+    font: normal Arial, Helvetica, sans-serif; */
+    
+    line-height: 1.6em;
+    /* Em is like spacing. 2 Em is double spaced. You can also use pixel sizes.*/
+    margin:0;
+}
+
+.button{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.clr {
+    clear: both;
+}
+
+
+.button:hover {
+    background: red;
+    color: white;
+}
+/* to target a class use .(classname) */
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color:red;
+}
+
+a:active {
+    color:green;
+}
+
+a:visited {
+    color: black;
+}
+
+
+
+.box-1 {
+    background-color: #333;
+    color: white;
+    border-right:5px red solid;
+    border-left:5px red solid;
+    border-top:5px red solid;
+    border-bottom:5px red solid;
+    /*same as above
+    border:5px red solid;
+    */
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-top-style: dotted;
+
+    padding: 20px;
+    margin-top: 20px;
+    margin: 20px 0;
+    /*most bottom code overrides everything*/
+}
+
+.box-1 h1{
+    font-family: tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: capitalize;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+.container {
+    width: 80%; /*You can use either pixel sizes or percents when typing this but using percents is better because it will automatically adjust to the middle.*/
+    margin: auto;
+}
+
+.box-2 {
+    border: 3px dotted #ccc;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.categories {
+    border: 1px lightgray solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+.categories ul{
+    padding: 0;
+    list-style: square;
+    list-style: none;
+}
+
+.categories li {
+    padding-bottom: 6px;
+    border-bottom:dotted 1px #333;
+    list-style-image: url('..images/check.png');
+}
+
+.my-form {
+    padding: 20px;
+
+}
+
+.form-group {
+    padding-bottom: 15px;
+
+}
+
+.my-form label {
+    display: block;
+}
+
+.my-form input[type="text"], .my-form textarea {
+    padding: 8px;
+    width: 100%;
+}
+
+.button{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.block {
+    float: left;
+    width:33.3%;
+    border:1px solid #ccc;
+    padding:10px;
+    box-sizing: border-box;
+    /*box-sizing: border box; helps you to maintain the proper 1/3rd sizing of the
+    boxes while being able to change the padding.*/
+}
+
+
+#main-block P{
+    float: left;
+    width: 70%;
+
+}
+
+#side-bar {
+    float:right;
+    width:30%;
+    background-color: #333;
+    color:#fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box {
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    background-image:url('IMG_0360.JPG') ;
+    background-position: 100px 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.p-box h1 {
+    position: absolute;
+    top: 40px;
+}
+
+.fixMe {
+    position: fixed;
+    top: 400px;
+}
+
+.my-list li:first-child{
+    background: red;
+}
+
+.my-list li:last-child{
+    background: blue;
+
+}
+
+.my-list li:nth-child(5){
+    background: yellow;
+}
+
+.my-list li:nth-child(even){
+    background: grey;
+}
+
+
+/*posititon values in CSS
+Static - default
+Relative - relative to it's normal position (top, left, right, bottom)
+Absolute - target whatever position we want inside of a relative element
+Fixed - fixed position to a browser window
+Initial - sets property to default value
+Inherit - inherits the property of it's parent element
+
+
+
+
+/* examples to shorten syntax with Margin and padding:
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    is the same as
+
+    margin: 5px 10px 5px 10px;
+
+    is the same as
+
+    margin: 5px 10px;
